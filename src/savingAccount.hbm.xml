@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hdfc.SavingAcoount" table="savingAccount">
+        <id name="acc_number" type="long" column="account_number">
+            <generator class="assigned"></generator>
+        </id>
+        <property name="acc_holder_name" type="string" column="holder_name"></property>
+        <property name="branch_name" type="string" column="branch"></property>
+        <property name="city" type="string" column="city"></property>
+        <property name="acc_balance" type="double" column="available_balance"></property>
+
+    </class>
+</hibernate-mapping>
